@@ -5,34 +5,126 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Four card feature section</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    *{
+      
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      font-size: 15px;
+    }
+    .header{
+      width: 35%;
+      text-align: center;
+      margin: auto auto;
+      margin-bottom: 5rem;
+    }
+    .title1{
+      font-weight: 200;
+
+    }
+    .title2{
+      font-weight:600;
+    }
+
+    .flexCards{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 50px;
+    }
+    .supervisor
+    .calculator{
+      margin-top: 50px;
+
+    }
+    .column{
+      flex-direction: column;
+    }
+    .teamBuilder{
+      margin-bottom: 50px;
+    }
+   
+    .card{
+      padding:10px;
+      height:300px;
+      width:27vw;
+      border-radius: 5px;
+      border:0px solid hsl(229, 6%, 66%);
+      box-shadow: 5px 5px 15px;
+    }
+    .supervisor{
+      border-top: 5px solid hsl(180, 62%, 55%);
+    }
+    .teamBuilder{
+      border-top: 5px solid hsl(0, 78%, 62%);
+    }
+    .calculator{
+      border-top: 5px solid  hsl(212, 86%, 64%);
+    }
+    .karma{
+      border-top: 5px solid hsl(34, 97%, 64%);
+    }
+
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
+    <div class="header">
+        <h1 class="title1">
+            Reliable, efficient delivery
+        </h1>
+      <h1 class="title2">
+          Powered by Technology
+      </h1>
+    <p class="description">
+        Our Artificial Intelligence powered tools use millions of project data points 
+        to ensure that your project is successful
+    </p>
+  </div>
+    
+  <div class="flexCards">
+    <div class="card supervisor">
+      <h3>Supervisor</h3>
+      <p>
+          Monitors activity to identify project roadblocks
+      </p>
+      <img src="images/icon-supervisor.svg" alt="">  
+    </div>
+
+    <div class="column"> 
+        <div class="card teamBuilder">
+            <h3> Team Builder</h3>
+            <p>Scans our talent network to create the optimal team for your project</p>
+            <img src="images/icon-team-builder.svg" alt="">
+          </div>
+      
+          <div class="card karma">
+            <h3>Karma</h3>
+            <p>Regularly evaluates our talent to ensure quality</p>    
+            <img src="images/icon-karma.svg" alt=""> 
+          </div>
+    </div>
+    
+
+    <div class="card calculator">
+      <h3>Calculator</h3>
+      <p>Uses data from past projects to provide better delivery estimates</p>
+      <img src="images/icon-calculator.svg" alt="">        
+    </div>
+  </div>
+
   
-  Reliable, efficient delivery
-  Powered by Technology
 
-  Our Artificial Intelligence powered tools use millions of project data points 
-  to ensure that your project is successful
-
-  Supervisor
-  Monitors activity to identify project roadblocks
-
-  Team Builder
-  Scans our talent network to create the optimal team for your project
-
-  Karma
-  Regularly evaluates our talent to ensure quality
-
-  Calculator
-  Uses data from past projects to provide better delivery estimates
+ 
+ 
+ 
 
   
   <footer>
