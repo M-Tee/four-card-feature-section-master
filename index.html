@@ -14,6 +14,7 @@
   <style>
     * {
       font-family: 'Poppins', sans-serif;
+      box-sizing: border-box;
     }
 
     body {
@@ -37,46 +38,54 @@
     .flexCards {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
-      margin: 4rem 15rem;
+      margin:5rem 7em;
+      border: 1px solid #000000;
+      align-items: center;
+    
     }
-    .column {
-      flex-direction: column;
-    }
-
-    .teamBuilder {
-      margin-bottom: 2rem;
-    }
-
     .card {
+      margin: 1rem;
       padding: 10px;
-      height: 230px;
-      width: 20vw;
+      height: auto;
       border-radius: 5px;
       border: 0px solid;
       box-shadow: 5px 5px 15px hsl(229, 6%, 66%);
     }
+
     .card img{
       float: right;
-      padding:1.5rem;
+      padding: 1rem;
     }
 
     .supervisor {
       border-top: 5px solid hsl(180, 62%, 55%);
-      margin-top: 10rem;
+      align-self: center;
+      flex: 1;
+      flex-basis: 0;
+    }
+    .column {
+      display: flex;
+      border: 1px solid #000000;
+      flex-direction: column;
+      align-items: center;
+      flex:1;
+      flex-basis: 0;
     }
 
     .teamBuilder {
       border-top: 5px solid hsl(0, 78%, 62%);
-    }
-
-    .calculator {
-      border-top: 5px solid hsl(212, 86%, 64%);
-      margin-top: 10rem;
+      margin-bottom: 30px;
     }
 
     .karma {
       border-top: 5px solid hsl(34, 97%, 64%);
+
+    }
+
+    .calculator {
+      border-top: 5px solid hsl(212, 86%, 64%);
+      align-self: center;
+      flex: 1;
     }
 
     .attribution {
@@ -87,6 +96,24 @@
     .attribution a {
       color: hsl(228, 45%, 44%);
     }
+
+    /* Smartphones (portrait) */
+    @media only screen and (max-width : 653px) {
+      .flexCards{
+        display:block;
+      }
+
+      .card{
+        height: 250px;
+      }
+
+      .supervisor,
+      .calculator{
+        margin-top: 0;
+      }
+ 
+    }
+
   </style>
 </head>
 
