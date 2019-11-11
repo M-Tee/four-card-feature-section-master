@@ -17,7 +17,8 @@
       box-sizing: border-box;
     }
     .fourCard_page{
-      margin:3rem 7em;
+      /* margin:3rem 7em; */
+      margin: 3% 5%;
     }
 
     body {
@@ -26,7 +27,6 @@
     .header {
       text-align: center;
       margin: auto auto;
-      padding-bottom: 3rem;
     }
     
     @media only screen and (min-width : 1480px) {
@@ -103,8 +103,16 @@
       color: hsl(228, 45%, 44%);
     }
    
-    /* Smartphones (portrait) */
-    @media only screen and (max-width : 771px) {
+    /* Medium screens */
+    @media only screen and (max-width : 768px) {
+
+    }
+
+    /* Small screens */
+    @media only screen and (max-width : 500px) {
+      .fourCard_page{
+        margin: 1rem;
+      }
       .flexCards{
         display:block;
       }
@@ -112,12 +120,12 @@
       .card{
         height: 250px;
       }
-
       .supervisor,
       .calculator{
         margin-top: 0;
       }
     }
+
 
   </style>
 </head>
